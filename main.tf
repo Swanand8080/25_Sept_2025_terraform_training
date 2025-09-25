@@ -3,18 +3,18 @@ provider "aws" {
 }
 
 resource "aws_instance" "myinstance1" {
-        ami = var.map1["ami"]
+        ami = ami        
         key_name = "Swanand_22_09_2025"
-        instance_type = var.map1["i-type"]
-        availability_zone = var.map1["az"]
+        instance_type = i-type
+        availability_zone = az
         tags = {
                 Name = "Swanand_instance"
         }
 }
 
 resource "aws_ebs_volume" "vol1" {
-        availability_zone = var.map1["az"]
-        size              = var.map1["ebs-size"]
+        availability_zone = az
+        size              = ebs-size
         tags = {
                 Name = "Terraform_vol_1"
         }
