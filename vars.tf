@@ -10,6 +10,6 @@ variable "az" {
         type = string
 }
 
-varaible "ebs-size" {
+variable "ebs-size" {
         type = string
 }
